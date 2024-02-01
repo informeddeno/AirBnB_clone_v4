@@ -1,5 +1,3 @@
-web_dynamic/static/scripts/2-hbnb.js
-
 // This code will be executed once the DOM is ready
 $(document).ready(init);
 
@@ -40,9 +38,3 @@ function apiStatus() {
     // If the request is successful and the API status is 'OK', add the 'available' class to the element with ID 'api_status'
     if (textStatus === 'success' && data.status === 'OK') {
       $('#api_status').addClass('available');
-    } else {
-      // If the API status is not 'OK', remove the 'available' class from the element with ID 'api_status'
-      $('#api_status').removeClass('available');
-    }
-  });
-}
